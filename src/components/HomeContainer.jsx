@@ -1,14 +1,17 @@
 import React from 'react'
-import Delivery from '../img/foodora.jpg'
+import Delivery from '../img/3697355.jpg'
+import HeroBg from '../img/heroBg2.png'
+import I1 from '../img/f2.jpg'
+
 
 
 const HomeContainer = () => {
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full h-[calc(100%-88px)]" id='home'>
             <div className="py-2 flex-1 flex flex-col items-start justify-center gap-6">
                 <div className='flex items-center gap-2 justify-center bg-orange-100 px-2 py-1 rounded-full'>
                     <p className='text-base text-orange-500 font-semibold'>
-                        Bike Delivery
+                        Quick Delivery
                     </p>
                     <div className='w-8 h-8 bg-white rounded-full overflow-hidden drop-shadow-xl'>
                         <img
@@ -19,11 +22,11 @@ const HomeContainer = () => {
                     </div>
                 </div>
                 <p className='text-[2.5rem] lg:text-[4.25rem] font-bold tracking-wide text-headingColor'>
-                    The Fastest Delivery in <span className='text-orange-600 text-[3rem] lg:text-[5rem]'> Your City </span>
+                    The #1 Food Delivery Service in <span className='text-orange-600 text-[3rem] lg:text-[5rem]'> Your City </span>
                 </p>
 
                 <p className='text-base text-textColor text-center md:text-left md:w-[80%]'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    It's been a long day, and all you want is a good meal delivered to your doorstep. You deserve the best food in the world, and that's what you'll get when you order food with Foodpad. We offer more than 30,000 restaurants, so there's something for everyone. Order your favorite dishes for delivery, and enjoy the most delicious food in city.
                 </p>
                 <button
                     type='button'
@@ -31,8 +34,20 @@ const HomeContainer = () => {
                     Order Now
                 </button>
             </div>
-            <div className="py-2 flex-1"></div>
-        </div>
+            <div className="py-2 flex-1 w-full flex items-center justify-center relative">
+                <img src={HeroBg} className=" ml-auto h:420 w-full lg:w-auto lg:h-650"
+                    alt="hero-Bg" />
+
+                <div className='w-full h-full absolute top-0 left-5 flex items-center justify-center px-32 py-4'>
+                    <div className='w-190 p-4 bg-cardOverlay blackdrop-blur-md d rounded-2xl flex flex-col items-center justify-center'>
+                        <img src={I1} className="w-50 -mt-20" alt="I1" />
+                        <p className='text-base font-semibold text-textColor'>Rice Meals</p>
+                        <p className='text-sm text-textColor'>Shawarma Rice</p>
+                        <p className='text-sm font-semibold text-headingColor'> <span className='text-xs text-red-500'>₱</span> 49.99</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     )
 }
 
