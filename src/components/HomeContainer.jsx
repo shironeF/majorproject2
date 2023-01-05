@@ -1,19 +1,18 @@
 import React from 'react'
 import Delivery from '../img/3697355.jpg'
 import HeroBg from '../img/heroBg2.png'
-import I1 from '../img/f2.jpg'
-
+import { heroData } from "../utils/data";
 
 
 const HomeContainer = () => {
     return (
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full h-[calc(100%-88px)]" id='home'>
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full" id='home'>
             <div className="py-2 flex-1 flex flex-col items-start justify-center gap-6">
-                <div className='flex items-center gap-2 justify-center bg-orange-100 px-2 py-1 rounded-full'>
-                    <p className='text-base text-orange-500 font-semibold'>
+                <div className="flex items-center gap-2 justify-center bg-orange-100 px-4 py-1 rounded-full">
+                    <p className="text-base text-orange-500 font-semibold">
                         Quick Delivery
                     </p>
-                    <div className='w-8 h-8 bg-white rounded-full overflow-hidden drop-shadow-xl'>
+                    <div className="w-8 h-8 bg-white rounded-full overflow-hidden drop-shadow-xl">
                         <img
                             src={Delivery}
                             className="w-full h-full object-contain"
@@ -35,16 +34,26 @@ const HomeContainer = () => {
                 </button>
             </div>
             <div className="py-2 flex-1 w-full flex items-center justify-center relative">
-                <img src={HeroBg} className=" ml-auto h:420 w-full lg:w-auto lg:h-650"
+                <img src={HeroBg} className=" ml-auto h-auto w-full lg:w-auto lg:h-650"
                     alt="hero-Bg" />
 
-                <div className='w-full h-full absolute top-0 left-5 flex items-center justify-center px-32 py-4'>
-                    <div className='w-190 p-4 bg-cardOverlay blackdrop-blur-md d rounded-2xl flex flex-col items-center justify-center'>
-                        <img src={I1} className="w-50 -mt-20" alt="I1" />
-                        <p className='text-base font-semibold text-textColor'>Rice Meals</p>
-                        <p className='text-sm text-textColor'>Shawarma Rice</p>
-                        <p className='text-sm font-semibold text-headingColor'> <span className='text-xs text-red-500'>₱</span> 49.99</p>
-                    </div>
+                <div className='w-full h-full absolute top-0 left-0 flex items-center justify-center py-4 gap-4'>
+                    {heroData && heroData.map((n) => (
+                        <div key={n.id} className='lg:w-190 p-4 bg-cardOverlay backdrop-blur-md rounded-3xl flex flex-col items-center justify-center drop-shadow-lg'>
+                            <img src={n.imageSrc} className="w-40 lg:w-40 -mt-10 lg:-mt-20" alt="" />
+                            <p className='text-base lg:text-xl font-semibold text-textColor mt-2 lg:mt-4'>
+                                {n.name}
+                            </p>
+
+                            <p className=' text-textColor text-[12px] lg:text-sm font-semibold my-1 lg:my-3'>
+                                {n.decp}
+                            </p>
+
+                            <p className='text-sm font-semibold text-headingColor'> <span className='text-xs text-red-600'>₱ </span>
+                                {n.price}
+                            </p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
