@@ -49,6 +49,8 @@ module.exports = {
         textColor : "#515151",
         cartNumBg : "#e80013",
         primary : "#f5f3f3",
+        cardOverlay : "rgba(241, 245, 249, 0.4)",
+        lighttextGray : '#9ca0ab'
       }
   },
   },  
