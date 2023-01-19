@@ -1,12 +1,12 @@
 import React from 'react'
 import Delivery from '../img/3697355.jpg'
-import HeroBg from '../img/heroBg2.png'
+import HeroBg from '../img/herobg0.png'
 import { heroData } from "../utils/data";
 
 
 const HomeContainer = () => {
     return (
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full" id='home'>
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full h-[calc(100%-88px)]" id='home'>
             <div className="py-2 flex-1 flex flex-col items-start justify-center gap-6">
                 <div className="flex items-center gap-2 justify-center bg-orange-100 px-4 py-1 rounded-full">
                     <p className="text-base text-orange-500 font-semibold">
