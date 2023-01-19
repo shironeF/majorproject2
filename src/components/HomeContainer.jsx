@@ -21,7 +21,7 @@ const HomeContainer = () => {
                     </div>
                 </div>
                 <p className='text-[2.5rem] lg:text-[4.25rem] font-bold tracking-wide text-headingColor'>
-                    The #1 Food Delivery Service in <span className='text-orange-600 text-[3rem] lg:text-[5rem]'> Your City</span>
+                    The #1 Food Delivery Service in <span className='text-orange-600 text-[3rem] lg:text-[5rem]'> Your City </span>
                 </p>
 
                 <p className='text-base text-textColor text-center md:text-left md:w-[80%]'>
@@ -37,19 +37,19 @@ const HomeContainer = () => {
                 <img src={HeroBg} className=" ml-auto h-auto w-full lg:w-auto lg:h-650"
                     alt="hero-Bg" />
 
-                <div className='w-full h-full absolute top-0 left-0 flex items-center justify-center py-4 gap-4'>
+                <div className='w-full h-full absolute top-0 left-0 flex items-center justify-center py-4 gap-4 flex-wrap'>
                     {heroData && heroData.map((n) => (
                         <div key={n.id} className='lg:w-190 p-4 bg-cardOverlay backdrop-blur-md rounded-3xl flex flex-col items-center justify-center drop-shadow-lg'>
-                            <img src={n.imageSrc} className="w-40 lg:w-40 -mt-10 lg:-mt-20" alt="" />
-                            <p className='text-base lg:text-xl font-semibold text-textColor mt-2 lg:mt-4'>
+                            <img src={n.imageSrc} className="w-20 lg:w-40 -mt-10 lg:-mt-20" alt="" />
+                            <p className='text-base lg:text-xl font-semibold text-textColor lg:mt-4'>
                                 {n.name}
                             </p>
 
-                            <p className=' text-textColor text-[12px] lg:text-sm font-semibold my-1 lg:my-3'>
+                            <p className=' text-textColor text-[10px] lg:text-sm font-semibold my-1 lg:my-3'>
                                 {n.decp}
                             </p>
 
-                            <p className='text-sm font-semibold text-headingColor'> <span className='text-xs text-red-600'>₱ </span>
+                            <p className='text-sm font-semibold text-headingColor'> <span className='text text-red-600'>₱ </span>
                                 {n.price}
                             </p>
                         </div>
