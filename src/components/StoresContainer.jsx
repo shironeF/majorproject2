@@ -7,7 +7,7 @@ const StoresContainer = () => {
         <center>
         <div>Restaurants</div>
         <div>You can choose your favorite meal!</div>
-        <div>boom panes </div>
+        <div>What are you waiting for?</div>
         </center>
         </section> 
     )
