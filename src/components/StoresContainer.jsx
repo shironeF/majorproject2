@@ -3,7 +3,13 @@ import React from 'react'
 const StoresContainer = () => {
     return (
         //Your Code for store will begin here 
-        <div>StoresContainer</div>
+        <section>
+        <center>
+        <div>Restaurants</div>
+        <div>You can choose your favorite meal!</div>
+        <div>boom panes </div>
+        </center>
+        </section> 
     )
 }
 
