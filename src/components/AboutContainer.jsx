@@ -2,9 +2,19 @@ import React from 'react'
 
 const AboutContainer = () => {
     return (
-        //Your Code for About will begin here 
-        <div>AboutContainer</div>
+
+        <section>
+        <center>
+        <div>about us</div>
+        <div>You can choose your favorite meal!</div>
+        <div>What are you waiting for?</div>
+        </center>
+        </section> 
+      
+        
     )
+
 }
 
 export default AboutContainer
+
