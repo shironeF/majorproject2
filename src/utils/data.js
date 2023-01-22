@@ -61,4 +61,10 @@ export const categories = [
         name : 'Rice Meals',
         urlParamName: "Rice Meals", 
     },
+
+    {
+        id : 7, 
+        name : 'Sides',
+        urlParamName: "Sides", 
+    },
 ];
