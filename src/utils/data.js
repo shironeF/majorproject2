@@ -30,41 +30,35 @@ export const heroData = [
     },
 ];
 
-export const category = [
+export const categories = [
     {
         id : 1, 
         name : 'Chickens',
-        urlParamName: "Chickens" 
+        urlParamName: "Chickens",
     },
     {
         id : 2, 
         name : 'Burgers',
-        urlParamName: "Burgers" 
+        urlParamName: "Burgers",
     },
     {
         id : 3, 
         name : 'Chicken',
-        urlParamName: "Chicken" 
+        urlParamName: "Chicken",
     },
     {
         id : 4, 
-        name : 'Shawarma',
-        urlParamName: "Shawarma" 
+        name : 'Pizza',
+        urlParamName: "Pizza", 
     },
     {
         id : 5, 
         name : 'Shawarma',
-        urlParamName: "Shawarma" 
+        urlParamName: "Shawarma",
     },
     {
         id : 6, 
         name : 'Rice Meals',
-        urlParamName: "Rice Meals" 
+        urlParamName: "Rice Meals", 
     },
-    {
-        id : 7, 
-        name : 'Pizza',
-        urlParamName: "Pizza" 
-    },
-    
 ];

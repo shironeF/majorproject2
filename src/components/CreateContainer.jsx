@@ -1,6 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MdFastfood } from 'react-icons/md'
+import { MdFastfood } from 'react-icons/md';
+import { categories } from "../utils/data";
+import Loader from "./Loader";
+
+
 
 const CreateContainer = () => {
 
@@ -28,25 +32,35 @@ const CreateContainer = () => {
                         </motion.p>
                     )
                 }
-                <div className='w-full py-2 border-b border-gray-300 flex items-center gap-2'>
+                <div className="w-full py-2 border-b border-gray-300 flex items-center gap-2">
                     <MdFastfood className="text-xl text-gray-700" />
                     <input
                         type="text"
-                        required value={title}
+                        required
+                        value={title}
                         onChange={(e) => setTitle(e.target.value)}
                         placeholder="Give me a title..."
-                        className="w-full h-full text-lg bg-transparent font-semibold outline-none border-none placeholder:text-gray-400 text-textColor" />
+                        className="w-full h-full text-lg bg-transparent outline-none border-none placeholder:text-gray-400 text-textColor"
+                    />
                 </div>
                 <div className="w-full">
-                    <select onChange={(e) => setCategory(e.target.value)} className="outline-none w-full text-base border-b-2 border-gray-200 p-2 rounded-md cursor-pointer">
+                    <select
+                        onChange={(e) => setCategory(e.target.value)}
+                        className="outline-none w-full text-base border-b-2 border-gray-200 p-2 rounded-md cursor-pointer"
+                    >
                         <option value="other" className="bg-white">
                             Select Category
                         </option>
-                        {category && category.map(item => (
-                            <option key={item.id} className="text-base border-0 outline-none capitalize bg-white text-headingColor" value={item.urlParamName}>
-                                {item.name}
-                            </option>
-                        ))}
+                        {categories &&
+                            categories.map((item) => (
+                                <option
+                                    key={item.id}
+                                    className="text-base border-0 outline-none capitalize bg-white text-headingColor"
+                                    value={item.urlParamName}
+                                >
+                                    {item.name}
+                                </option>
+                            ))}
                     </select>
                 </div>
                 <div className="group flex justify-center items-center flex-col border-2 border-dotted border-gray-300 w-full h-225 md:h-420 cursor-pointer rounded-lg">
