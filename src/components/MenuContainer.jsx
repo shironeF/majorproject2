@@ -14,4 +14,4 @@ const MenuContainer = () => {
     )
 }
 
-export default StoresContainer
+export default MenuContainer
