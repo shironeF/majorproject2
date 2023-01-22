@@ -1,8 +1,7 @@
 import React from 'react';
 import { Route, Routes } from "react-router-dom"
 import { AnimatePresence } from 'framer-motion';
-import {CreateContainer, Header, MainContainer,MenuContainer,DealsContainer} from "./components"
-import AboutContainer from './components/AboutContainer';
+
 
 const App = () => {
   return (
@@ -15,7 +14,9 @@ const App = () => {
         <Routes>
           <Route path="/*" element={<MainContainer />} />
           <Route path="/createItem" element={<CreateContainer />} />
+
           <Route path="/menu" element={<MenuContainer />} />
+
           <Route path="/deals" element={<DealsContainer />} />
           <Route path="/About" element={<AboutContainer />} />
           </Routes>   
