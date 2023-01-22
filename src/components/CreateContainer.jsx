@@ -20,7 +20,7 @@ const CreateContainer = () => {
 
     return (
         <div className='w-full min-h-screen flex items-center justify-center'>
-            <div className='w-[90%] md:w-[75%] border-gray-300 rounded-lg p-4 flex flex-col items-center justify-center gap-4'>
+            <div className="w-[90%] md:w-[75%] border border-gray-300 rounded-lg p-4 flex flex-col items-center justify-center gap-4">
                 {
                     fields && (
                         <motion.p
@@ -40,7 +40,7 @@ const CreateContainer = () => {
                         value={title}
                         onChange={(e) => setTitle(e.target.value)}
                         placeholder="Give me a title..."
-                        className="w-full h-full text-lg bg-transparent outline-none border-none placeholder:text-gray-400 text-textColor"
+                        className="w-full h-full text-lg bg-transparent outline-none border-none placeholder:text-gray-500 text-textColor"
                     />
                 </div>
                 <div className="w-full">
@@ -57,14 +57,14 @@ const CreateContainer = () => {
                                     key={item.id}
                                     className="text-base border-0 outline-none capitalize bg-white text-headingColor"
                                     value={item.urlParamName}
-                                >   
+                                >
                                     {item.name}
                                 </option>
                             ))}
                     </select>
                 </div>
                 <div className="group flex justify-center items-center flex-col border-2 border-dotted border-gray-300 w-full h-225 md:h-420 cursor-pointer rounded-lg">
-                    {isLoading ? <loader /> : <></>}
+                    {isLoading ? <Loader /> : <></>}
                 </div>
             </div>
         </div>
