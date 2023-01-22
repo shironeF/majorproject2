@@ -64,7 +64,7 @@ const Header = () => {
 
             <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer"><Link to={"/"}>Home</Link></li>
             <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer"><Link to={"/deals"}>Deals</Link></li>
-            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer"><Link to={"/stores"}>Stores</Link></li>
+            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer"><Link to={"/stores"}>Menu</Link></li>
             <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer"><Link to={"/about"}>About Us</Link></li>
 
           </motion.ul>
