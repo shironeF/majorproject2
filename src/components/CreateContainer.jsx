@@ -57,7 +57,7 @@ const CreateContainer = () => {
                                     key={item.id}
                                     className="text-base border-0 outline-none capitalize bg-white text-headingColor"
                                     value={item.urlParamName}
-                                >
+                                >   
                                     {item.name}
                                 </option>
                             ))}
