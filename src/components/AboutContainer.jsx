@@ -1,4 +1,27 @@
+<<<<<<< HEAD
 import React from "react";
+=======
+
+import React from 'react'
+
+const AboutContainer = () => {
+    return (
+
+        <section>
+            <center>
+                <div>about us</div>
+                <div>You can choose your favorite meal!</div>
+                <div>What are you waiting for?</div>
+                <div>What are you waiting for?</div>
+
+            </center>
+        </section>
+
+
+    )
+import React from 'react';
+>>>>>>> 0b613b99345fd097ec3724d6763b98e51b575386
+
 
 
 
