@@ -2,7 +2,7 @@ import React from 'react'
 import HomeContainer from './HomeContainer'
 import { m, motion } from "framer-motion"
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
-import RowContainer from "./RowContainer"
+import RowContainer from "./RowContainer.jsx"
 import { useStateValue } from "../context/StateProvider"
 
 
@@ -31,4 +31,3 @@ const MainContainer = () => {
 }
 
 export default MainContainer
-
