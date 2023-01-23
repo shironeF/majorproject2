@@ -50,10 +50,10 @@ const Header = () => {
   }
 
   return (
-    <header className="z-50 w-screen p-3 px-4 md:p-6 md:px-16">
+    <header className=" fixed bg-gradient-to-tl from-red-500 to red-800 z-50 w-screen p-3 px-4 md:p-6 md:px-16">
       <div className="hidden md:flex w-full h-full items-center justify-between">
         <Link to={"/"} className="flex items-center gap-2">
-          <img src={Logo} className="w-8 object-cover" alt="logo" />
+          <img src={Logo} className="w-11 object-cover" alt="logo" />
           <p className="text-headingColor text-xl font-bold"> Foodpad </p>
         </Link>
         <div className='flex items-center gap-8'>
