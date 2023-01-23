@@ -24,7 +24,7 @@ const MainContainer = () => {
                         <motion.div whileTap={{ scale: 0.75 }} className='w-8 h-8 rounded-lg bg-orange-400 hover:bg-orange-500 flex items-center justify-center cursor-pointer ease-in-out shadow-lg'> <MdChevronRight className='text-base text-white' /> </motion.div>
                     </div>
                 </div>
-                <RowContainer flag={true} data={foodItems?.filter(n => n.category === 'Promo')} />
+                <RowContainer flag={false} data={foodItems?.filter(n => n.category === 'Promo')} />
             </section>
         </div>
     )
