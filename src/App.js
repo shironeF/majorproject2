@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import { Route, Routes } from "react-router-dom"
 import { AnimatePresence } from 'framer-motion';
+import {CreateContainer, Header, MainContainer,StoresContainer,DealsContainer,AboutContainer} from "./components"
+import { getAllFoodItems } from './utils/firebaseFunctions';
+import { useStateValue } from './context/StateProvider';
+import { actionType } from "./context/reducer";
 
 const App = () => {
+  const [{foodItems}, dispatch ] = useStateValue();
+  const fetchData = async () => {
+    await getAllFoodItems() .then((data) => {dispatch({
+      type: actionType.SET_FOOD_ITEMS,
+      foodItems: data,
+    });
+  });
+};
+  useEffect(() => { fetchData(); }, []);
   return (
 
     <AnimatePresence mode='wait'>
@@ -13,9 +26,7 @@ const App = () => {
         <Routes>
           <Route path="/*" element={<MainContainer />} />
           <Route path="/createItem" element={<CreateContainer />} />
-
-          <Route path="/menu" element={<MenuContainer />} />
-
+          <Route path="/stores" element={<StoresContainer />} />
           <Route path="/deals" element={<DealsContainer />} />
           <Route path="/About" element={<AboutContainer />} />
           </Routes>   
