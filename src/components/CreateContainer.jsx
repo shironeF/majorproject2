@@ -10,8 +10,6 @@ import { actionType } from "../context/reducer";
 import { useStateValue } from "../context/StateProvider";
 
 
-
-
 const CreateContainer = () => {
 
     const [title, setTitle] = useState("");

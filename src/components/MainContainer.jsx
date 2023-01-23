@@ -1,11 +1,13 @@
 import React from 'react'
 import HomeContainer from './HomeContainer'
-import { motion } from "framer-motion"
+import { m, motion } from "framer-motion"
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 import RowContainer from "./RowContainer"
+import { useStateValue } from "../context/StateProvider"
 
 
 const MainContainer = () => {
+    const [{ foodItems }, dispatch] = useStateValue()
     return (
         <div className='w-full h-auto flex flex-col items-center justify-center'>
             <HomeContainer />
@@ -22,10 +24,11 @@ const MainContainer = () => {
                         <motion.div whileTap={{ scale: 0.75 }} className='w-8 h-8 rounded-lg bg-orange-400 hover:bg-orange-500 flex items-center justify-center cursor-pointer ease-in-out shadow-lg'> <MdChevronRight className='text-base text-white' /> </motion.div>
                     </div>
                 </div>
-                <RowContainer flag={true} />
+                <RowContainer flag={true} data={foodItems?.filter(n => n.category === 'Promo')} />
             </section>
         </div>
     )
 }
 
 export default MainContainer
+
