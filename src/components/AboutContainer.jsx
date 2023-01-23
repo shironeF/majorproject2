@@ -1,23 +1,5 @@
-
-import React from 'react'
-
-const AboutContainer = () => {
-    return (
-
-        <section>
-            <center>
-                <div>about us</div>
-                <div>You can choose your favorite meal!</div>
-                <div>What are you waiting for?</div>
-                <div>What are you waiting for?</div>
-
-            </center>
-        </section>
-
-
-    )
+<<<<<<< HEAD
 import React from 'react';
-
 
 
 
@@ -78,3 +60,5 @@ export default function AboutContainer() {
   )
 }
 
+=======
+>>>>>>> b46a1f2537d78e77e4868f3ba4a4fbbd8e25c5e4

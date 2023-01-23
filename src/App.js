@@ -1,24 +1,9 @@
-import React, { useEffect } from "react";
+import React from 'react';
 import { Route, Routes } from "react-router-dom"
 import { AnimatePresence } from 'framer-motion';
 
-import {CreateContainer, Header, MainContainer,StoresContainer,DealsContainer,AboutContainer} from "./components"
-import { getAllFoodItems } from './utils/firbaseFunctions';
-import { useStateValue } from './context/StateProvider';
-import { actionType } from "./context/reducer";
-
-
 
 const App = () => {
-  const [{foodItems}, dispatch ] = useStateValue();
-  const fetchData = async () => {
-    await getAllFoodItems() .then((data) => {dispatch({
-      type: actionType.SET_FOOD_ITEMS,
-      foodItems: data,
-    });
-  });
-};
-  useEffect(() => { fetchData(); }, []);
   return (
 
     <AnimatePresence mode='wait'>
