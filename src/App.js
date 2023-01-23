@@ -1,8 +1,12 @@
 import React from 'react';
 import { Route, Routes } from "react-router-dom"
 import { AnimatePresence } from 'framer-motion';
-
-
+import  Header from "./components/Header";
+import MainContainer from "./components/MainContainer";
+import DealsContainer from "./components/DealsContainer";
+import MenuContainer from "./components/MenuContainer";
+import AboutContainer from "./components/AboutContainer";
+import CreateContainer from "./components/CreateContainer";
 const App = () => {
   return (
 

@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-import React from 'react';
+import React from "react";
 
 
 
@@ -60,5 +59,3 @@ export default function AboutContainer() {
   )
 }
 
-=======
->>>>>>> b46a1f2537d78e77e4868f3ba4a4fbbd8e25c5e4
