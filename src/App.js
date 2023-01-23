@@ -1,10 +1,13 @@
 import React, { useEffect } from "react";
 import { Route, Routes } from "react-router-dom"
 import { AnimatePresence } from 'framer-motion';
+
 import {CreateContainer, Header, MainContainer,StoresContainer,DealsContainer,AboutContainer} from "./components"
 import { getAllFoodItems } from './utils/firbaseFunctions';
 import { useStateValue } from './context/StateProvider';
 import { actionType } from "./context/reducer";
+
+
 
 const App = () => {
   const [{foodItems}, dispatch ] = useStateValue();
@@ -19,14 +22,16 @@ const App = () => {
   return (
 
     <AnimatePresence mode='wait'>
-    <div className="w-screen h-auto flex flex-col bg-primary">
+    <div className="w-screen h-auto flex flex-col">
       <Header />
 
       <main className="mt-14 md:mt-20 px-4 md:px-16 py-4 w-full">
         <Routes>
           <Route path="/*" element={<MainContainer />} />
           <Route path="/createItem" element={<CreateContainer />} />
-          <Route path="/stores" element={<StoresContainer />} />
+
+          <Route path="/menu" element={<MenuContainer />} />
+
           <Route path="/deals" element={<DealsContainer />} />
           <Route path="/About" element={<AboutContainer />} />
           </Routes>   
@@ -36,4 +41,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
