@@ -25,7 +25,6 @@ const CreateContainer = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [{ foodItems }, dispatch] = useStateValue();
 
-
     const uploadImage = (e) => {
         setIsLoading(true);
         const imageFile = e.target.files[0];
