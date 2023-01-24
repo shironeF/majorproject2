@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 import RowContainer from "./RowContainer.jsx"
 import { useStateValue } from "../context/StateProvider"
+import MenuContainer from './MenuContainer'
 
 
 const MainContainer = () => {
@@ -19,7 +20,7 @@ const MainContainer = () => {
             <section className='w-full my-6'>
                 <div className="w-full flex items-center justify-between">
                     <p className='text-2xl font-semibold text-headingColor uppercase relative before:absolute before:rounded-lg before:content before:w-36 before:h-1 before:-bottom-2 before:left-0 before:bg-gradient-to-tr from-orange-400 to orange-600  transition-all ease-in-out'>
-                        Our Fresh & healthy foods
+                        CHECKOUT ALL OF OUR SULIT PROMO!
                     </p>
 
                     <div className='hidden md:flex gap-3 items-center'>
@@ -32,6 +33,8 @@ const MainContainer = () => {
                     scrollValue={scrollValue}
                     flag={true} data={foodItems?.filter(n => n.category === 'Promo')} />
             </section>
+
+            <MenuContainer />
         </div>
     )
 }

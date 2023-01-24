@@ -7,3 +7,4 @@ export {default as DealsContainer} from "./DealsContainer";
 export {default as AboutContainer} from "./AboutContainer";
 export { default as Loader } from "./Loader";
 export { default as RowContainer } from "./RowContainer";
+export { default as MenuContainer } from "./MenuContainer";

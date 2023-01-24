@@ -29,7 +29,7 @@ const HomeContainer = () => {
                 </p>
                 <button
                     type='button'
-                    className='bg-gradient-to-br from-orange-400 to-orange-500 md:w-auto w-full px-4 py-2 rounded-lg hover:shadow-lg transition-all ease-in-out duration-100'>
+                    className='bg-gradient-to-br from-orange-300 to-orange-400 md:w-auto w-full px-4 py-2 rounded-lg hover:shadow-lg transition-all ease-in-out duration-100'>
                     Order Now
                 </button>
             </div>
