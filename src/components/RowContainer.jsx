@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { MdShoppingBasket } from 'react-icons/md'
 import { motion } from 'framer-motion'
 
-const RowContainer = ({ flag, data }) => {
+const RowContainer = ({ flag, data, scrollValue }) => {
     console.log(data);
+    const rowContainer = useRef();
+    useEffect(() => {
+        rowContainer.current.scrollLeft += scrollValue;
+    }, [scrollValue]);
     return (
-        <div className={`w-full flex items-center gap-3 my-12 bg-gradient-to-tl from-red-500 to red-800 ${flag ? "overflow-x-scroll scrollbar-none" : "overflow-x-hidden flex-wrap"}`}>
+        <div
+            ref={rowContainer}
+            className={`w-full flex items-center gap-3 my-12 bg-gradient-to-tl from-red-500 to red-800 ${flag ? "overflow-x-scroll scrollbar-none" : "overflow-x-hidden flex-wrap"}`}>
 
 
             {data && data.map(item => (< div key={item.id} className='w-300 min-w-[300px] md:w-340 md:min-w-[340px] h-auto my-12 bg-orange-400 rounded-lg p-2 shadow-md backdrop-blur-lg hover:drop-shadow-lg' >

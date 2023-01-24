@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from "react";
 import HomeContainer from './HomeContainer'
-import { m, motion } from "framer-motion"
+import { motion } from "framer-motion"
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 import RowContainer from "./RowContainer.jsx"
 import { useStateValue } from "../context/StateProvider"
 
 
 const MainContainer = () => {
-    const [{ foodItems }, dispatch] = useStateValue()
+    const [{ foodItems }, dispatch] = useStateValue();
+    const [scrollValue, setScrollValue] = useState(0);
+
+    useEffect(() => { }, [scrollValue]);
+
     return (
         <div className='w-full h-auto flex flex-col items-center justify-center'>
             <HomeContainer />
@@ -19,12 +23,14 @@ const MainContainer = () => {
                     </p>
 
                     <div className='hidden md:flex gap-3 items-center'>
-                        <motion.div whileTap={{ scale: 0.75 }} className='w-8 h-8 rounded-lg bg-orange-400 hover:bg-orange-500 flex items-center justify-center cursor-pointer ease-in-out shadow-lg'> <MdChevronLeft className='text-base text-white' /> </motion.div>
+                        <motion.div whileTap={{ scale: 0.75 }} className='w-8 h-8 rounded-lg bg-orange-400 hover:bg-orange-500 flex items-center justify-center cursor-pointer ease-in-out shadow-lg' onClick={() => setScrollValue(-200)}> <MdChevronLeft className='text-base text-white' /> </motion.div>
 
-                        <motion.div whileTap={{ scale: 0.75 }} className='w-8 h-8 rounded-lg bg-orange-400 hover:bg-orange-500 flex items-center justify-center cursor-pointer ease-in-out shadow-lg'> <MdChevronRight className='text-base text-white' /> </motion.div>
+                        <motion.div whileTap={{ scale: 0.75 }} className='w-8 h-8 rounded-lg bg-orange-400 hover:bg-orange-500 flex items-center justify-center cursor-pointer ease-in-out shadow-lg' onClick={() => setScrollValue(200)}> <MdChevronRight className='text-base text-white' /> </motion.div>
                     </div>
                 </div>
-                <RowContainer flag={false} data={foodItems?.filter(n => n.category === 'Promo')} />
+                <RowContainer
+                    scrollValue={scrollValue}
+                    flag={true} data={foodItems?.filter(n => n.category === 'Promo')} />
             </section>
         </div>
     )
