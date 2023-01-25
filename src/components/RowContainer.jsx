@@ -12,7 +12,7 @@ const RowContainer = ({ flag, data, scrollValue }) => {
     return (
         <div
             ref={rowContainer}
-            className={`w-full flex rounded-2xl items-center gap-3 my-12 scroll-smooth bg-gradient-to-tl from-red-500 to red-800 ${flag ? "overflow-x-scroll scrollbar-none" : "overflow-x-hidden flex-wrap justify-center"}`}>
+            className={`w-full flex rounded-2xl items-center gap-3 my-12 scroll-smooth bg-gradient-to-tl from-orange-300 to-red-400 ${flag ? "overflow-x-scroll scrollbar-none" : "overflow-x-hidden flex-wrap justify-center"}`}>
 
 
             {data && data.length > 0 ? (
@@ -41,7 +41,7 @@ const RowContainer = ({ flag, data, scrollValue }) => {
                     </div>
                 </div>))
             ) : (<div className="w-full h-full flex flex-col items-center justify-center">
-                <img src={menunotfound} className="h-340" /> <p>Sorry this menu is not yet available</p>
+                <img src={menunotfound} className="h-340" /> <p className='font-semibold text-headingColor'>Sorry this menu is not yet available</p>
             </div>
             )}
         </div>

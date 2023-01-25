@@ -5,10 +5,11 @@ import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import RowContainer from "./RowContainer.jsx";
 import { useStateValue } from "../context/StateProvider";
 import MenuContainer from './MenuContainer';
+import CartContainer from './CartContainer';
 
 
 const MainContainer = () => {
-    const [{ foodItems }, dispatch] = useStateValue();
+    const [{ foodItems, cartShow }, dispatch] = useStateValue();
     const [scrollValue, setScrollValue] = useState(0);
 
     useEffect(() => { }, [scrollValue]);
@@ -20,7 +21,7 @@ const MainContainer = () => {
             <section className='w-full my-6'>
                 <div className="w-full flex items-center justify-between">
                     <p className='text-2xl font-semibold text-headingColor uppercase relative before:absolute before:rounded-lg before:content before:w-36 before:h-1 before:-bottom-2 before:left-0 before:bg-gradient-to-tr from-orange-400 to orange-600  transition-all ease-in-out'>
-                        CHECK-  OUT ALL OF OUR SULIT PROMO!
+                        CHECK-OUT ALL OF OUR SULIT PROMO!
                     </p>
 
                     <div className='hidden md:flex gap-3 items-center'>
@@ -35,6 +36,10 @@ const MainContainer = () => {
             </section>
 
             <MenuContainer />
+
+            {cartShow && (
+                <CartContainer />
+            )}
         </div>
     )
 }
