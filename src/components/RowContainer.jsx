@@ -2,13 +2,31 @@ import React, { useEffect, useRef, useState } from 'react';
 import { MdShoppingBasket } from 'react-icons/md';
 import { motion } from 'framer-motion';
 import menunotfound from '../img/menu-unavailable.svg';
+import { useStateValue } from '../context/StateProvider';
+import { actionType } from '../context/reducer';
 
 const RowContainer = ({ flag, data, scrollValue }) => {
-    console.log(data);
     const rowContainer = useRef();
+
+    const [items, setItems] = useState([]);
+
+    const [{ cartItems }, dispatch] = useStateValue();
+
+    const addtocart = () => {
+        dispatch({
+            type: actionType.SET_CARTITEMS,
+            cartItems: items,
+        });
+        localStorage.setItem("cartItems", JSON.stringify(items));
+    };
     useEffect(() => {
         rowContainer.current.scrollLeft += scrollValue;
     }, [scrollValue]);
+
+    useEffect(() => {
+        addtocart();
+    }, [items]);
+
     return (
         <div
             ref={rowContainer}
@@ -25,7 +43,11 @@ const RowContainer = ({ flag, data, scrollValue }) => {
                                 className='w-full -mt-full object-fit' />
                         </motion.div>
 
-                        <motion.div whileTap={{ scale: 0.75 }} className='w-12 h-12 rounded-full bg-red-600 flex items-center justify-center cursor-pointer hover:shadow-md'>
+                        <motion.div
+                            whileTap={{ scale: 0.75 }}
+                            className='w-12 h-12 rounded-full bg-red-600 flex items-center justify-center cursor-pointer hover:shadow-md'
+                            onClick={() => setItems([...cartItems, item])
+                            }>
                             <MdShoppingBasket className='text-white' />
                         </motion.div>
                     </div>
@@ -40,9 +62,11 @@ const RowContainer = ({ flag, data, scrollValue }) => {
                         </div>
                     </div>
                 </div>))
-            ) : (<div className="w-full h-full flex flex-col items-center justify-center">
-                <img src={menunotfound} className="h-340" /> <p className='font-semibold text-headingColor'>Sorry this menu is not yet available</p>
-            </div>
+            ) : (
+
+                <div className="w-full h-full flex flex-col items-center justify-center">
+                    <img src={menunotfound} className="h-340" /> <p className='font-semibold text-headingColor'>Sorry this menu is not yet available</p>
+                </div>
             )}
         </div>
     );

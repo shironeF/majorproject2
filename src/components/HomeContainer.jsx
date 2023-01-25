@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Delivery from '../img/3697355.jpg';
 import HeroBg from '../img/left-yellow@2x-4af06303da718a581de65b81c9546dd312411b6a778edbecbcc2b999d94d60e3.svg';
 import { heroData } from "../utils/data";
