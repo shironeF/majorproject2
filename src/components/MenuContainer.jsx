@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
-import { IoFastFood } from 'react-icons/io5'
-import { category, categories } from '../utils/data'
-import { motion } from 'framer-motion'
-import RowContainer from "./RowContainer"
-import { useStateValue } from '../context/StateProvider'
+import React, { useState, useEffect } from 'react';
+import { IoFastFood } from 'react-icons/io5';
+import { category, categories } from '../utils/data';
+import { motion } from 'framer-motion';
+import RowContainer from "./RowContainer";
+import { useStateValue } from '../context/StateProvider';
 
 const MenuContainer = () => {
 
