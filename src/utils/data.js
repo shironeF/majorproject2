@@ -70,11 +70,52 @@ export const categories = [
     },
 ];
 
- export const testimonials = [
+export const restaurants = [
 
-    {
-        id : 8, 
-        name : 'Promo',
-        urlParamName: "Promo code", 
-    },
+{
+    id : 1, 
+    name : 'Mcdonalds',
+    urlParamName: "Mcdonalds",
+},
+{
+    id : 2, 
+    name : 'Jollibee',
+    urlParamName: "Jollibee",
+},
+{
+    id : 5, 
+    name : 'BurgerKing',
+    urlParamName: "BurgerKing", 
+},
+{
+    id : 6, 
+    name : 'Kuya J',
+    urlParamName: "Kuya J", 
+},
+{
+    id : 7, 
+    name : 'Pizza Hut',
+    urlParamName: "Pizza Hut", 
+},
+{
+    id : 8, 
+    name : 'Mang Inasal',
+    urlParamName: "Mang Inasal", 
+},
+{
+    id : 9, 
+    name : "Wendy's",
+    urlParamName: "Wendy's", 
+},
+{
+    id : 10, 
+    name : "KFC",
+    urlParamName: "KFC", 
+},
+
+{
+    id : 11, 
+    name : "MAX's",
+    urlParamName: "MAX's", 
+},
 ];
