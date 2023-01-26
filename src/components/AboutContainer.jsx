@@ -12,7 +12,6 @@ const AboutContainer = () => {
         <div>What are you waiting for?</div>
 
       </center>
-      <Footer />
     </section>
 
 
