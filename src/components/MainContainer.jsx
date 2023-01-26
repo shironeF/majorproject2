@@ -35,7 +35,6 @@ const MainContainer = () => {
                     scrollValue={scrollValue}
                     flag={true} data={foodItems?.filter(n => n.category === 'Promo code')} />
             </section>
-
             {cartShow && (
                 <CartContainer />
             )}

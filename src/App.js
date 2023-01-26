@@ -5,6 +5,7 @@ import {CreateContainer, Header, MainContainer,StoresContainer,DealsContainer,Ab
 import { getAllFoodItems } from './utils/firebaseFunctions';
 import { useStateValue } from './context/StateProvider';
 import { actionType } from "./context/reducer";
+
 const App = () => {
   const [{foodItems}, dispatch ] = useStateValue();
   const fetchData = async () => {
