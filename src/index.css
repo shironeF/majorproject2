@@ -12,7 +12,13 @@ body{
 html, body {
     scroll-behavior: smooth;
 }
-
+.imgH {
+max-height: 15rem; 
+background: cover;
+}
+.linkdeco {
+    text-decoration: none;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

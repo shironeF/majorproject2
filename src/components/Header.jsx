@@ -60,7 +60,7 @@ const Header = () => {
   return (
     <header className=" fixed bg-gradient-to-tl from-orange-300 to-red-400 z-50 w-screen p-3 px-4 md:p-6 md:px-16">
       <div className="hidden md:flex w-full h-full items-center justify-between">
-        <Link to={"/"} className="flex items-center gap-2">
+        <Link to={"/"} className="flex items-center gap-2 linkdeco">
           <img src={Logo} className="w-11 object-cover" alt="logo" />
           <p className="text-headingColor text-xl font-bold"> Foodpad </p>
         </Link>
@@ -70,10 +70,10 @@ const Header = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 200 }} className="flex items-center gap-8">
 
-            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer"><Link to={"/"}>Home</Link></li>
-            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer"><Link to={"/deals"}>Deals</Link></li>
-            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer"><Link to={"/stores"}>Stores</Link></li>
-            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer"><Link to={"/about"}>About Us</Link></li>
+            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer"><Link to={"/"} className="linkdeco">Home</Link></li>
+            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer"><Link to={"/deals"} className="linkdeco">Deals</Link></li>
+            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer"><Link to={"/stores"} className="linkdeco"> Stores</Link></li>
+            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer"><Link to={"/about"} className="linkdeco">About Us</Link></li>
 
           </motion.ul>
 
@@ -100,7 +100,7 @@ const Header = () => {
                 className="w-40 bg-gray-50 shadow-xl rounded-lg flex-col absolute top-15.5 right-5 px-4 py-2">
                 {
                   user && user.email === "shironefortuno278@gmail.com" && (
-                    <Link to={`/createItem`}>
+                    <Link to={`/createItem`} className="linkdeco">
                       <p className="px-4 py-2 flex item-center gap-3 cursor-pointer hover:bg-slate-100 transition-all duration-100 ease-in-out text-textColor text-base" onClick={() => setIsMenu(false)}>New Item <MdAdd /></p>
                     </Link>
                   )
@@ -127,7 +127,7 @@ const Header = () => {
           )}
         </div>
 
-        <Link to={"/"} className="flex items-center gap-2">
+        <Link to={"/"} className="flex items-center gap-2 linkdeco">
           <img src={Logo} className="w-8 object-cover" alt="logo" />
           <p className="text-headingColor text-xl font-bold"> Foodpad </p>
         </Link>
@@ -147,7 +147,7 @@ const Header = () => {
               className="w-40 bg-gray-50 shadow-xl rounded-lg flex-col absolute top-15.5 right-5 px-4 py-2">
               {
                 user && user.email === "shironefortuno278@gmail.com" && (
-                  <Link to={`/createItem`}>
+                  <Link to={`/createItem`} className="linkdeco">
                     <p className="px-4 py-2 flex item-center gap-3 cursor-pointer hover:bg-slate-100 transition-all duration-100 ease-in-out text-textColor text-base">New Item <MdAdd /></p>
                   </Link>
                 )
