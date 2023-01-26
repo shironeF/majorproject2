@@ -4,10 +4,10 @@ import { motion } from 'framer-motion'
 import { RiRefreshFill } from 'react-icons/ri'
 import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
-import EmptyCart from "../img/happy.jpg"
+import EmptyCart from "../img/happy.jpg";
 import CartItem from './CartItem';
-import { useState } from 'react';
 import { useEffect } from 'react';
+import { useState } from 'react';
 
 const CartContainer = () => {
 
