@@ -69,3 +69,12 @@ export const categories = [
         urlParamName: "Promo code", 
     },
 ];
+
+ export const testimonials = [
+
+    {
+        id : 8, 
+        name : 'Promo',
+        urlParamName: "Promo code", 
+    },
+];
