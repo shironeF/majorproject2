@@ -8,6 +8,8 @@ import App from './App'
 import { StateProvider } from "./context/StateProvider";
 import { initialState } from "./context/initialState";
 import reducer from "./context/reducer";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 ReactDOM.render(
     <Router >
