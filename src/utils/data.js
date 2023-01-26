@@ -42,11 +42,6 @@ export const categories = [
         urlParamName: "Burgers",
     },
     {
-        id : 3, 
-        name : 'Chicken',
-        urlParamName: "Chicken",
-    },
-    {
         id : 4, 
         name : 'Pizza',
         urlParamName: "Pizza", 
@@ -71,6 +66,6 @@ export const categories = [
     {
         id : 8, 
         name : 'Promo',
-        urlParamName: "Promo", 
+        urlParamName: "Promo code", 
     },
 ];

@@ -5,6 +5,7 @@ import {CreateContainer, Header, MainContainer,StoresContainer,DealsContainer,Ab
 import { getAllFoodItems } from './utils/firebaseFunctions';
 import { useStateValue } from './context/StateProvider';
 import { actionType } from "./context/reducer";
+import { Footer } from "./components/Footer";
 
 const App = () => {
   const [{foodItems}, dispatch ] = useStateValue();
@@ -32,6 +33,7 @@ const App = () => {
           </Routes>   
       </main>
     </div>
+    <Footer />
     </AnimatePresence>
   )
 }
