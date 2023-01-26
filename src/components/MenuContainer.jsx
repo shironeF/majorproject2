@@ -14,7 +14,7 @@ const MenuContainer = () => {
         < section className='w-full my-6' id='menu' >
             <div className='w-full flex flex-col items-center justify-center'>
                 <p className='text-2xl font-semibold text-headingColor uppercase relative before:absolute before:rounded-lg before:content before:w-56 before:h-1 before:-bottom-2 before:left-1 before:bg-orange-400 transition-all ease-in-out mr-auto'>
-                    Featured Meals
+                    Most Ordered Meals
                 </p>
 
                 <div className='w-full flex items-center justify-start lg:justify-center gap-8 mt-6 overflow-x-scroll scrollbar-none'>
@@ -33,7 +33,7 @@ const MenuContainer = () => {
                     )
                     )}
                 </div>
-                <div className='w-full h-screen'>
+                <div>
                     <RowContainer flag={false} data={foodItems?.filter((n) => n.category === filter)} />
                 </div>
             </div>

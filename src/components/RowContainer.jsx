@@ -64,7 +64,7 @@ const RowContainer = ({ flag, data, scrollValue }) => {
                 </div>))
             ) : (
 
-                <div className="w-full h-full flex flex-col items-center justify-center">
+                <div className="w-full h-full flex flex-col items-center justify-center mb-2">
                     <img src={menunotfound} className="h-340" /> <p className='font-semibold text-headingColor'>Sorry this menu is not yet available</p>
                 </div>
             )}
