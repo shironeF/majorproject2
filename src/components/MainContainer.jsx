@@ -17,6 +17,7 @@ const MainContainer = () => {
     return (
         <div className='w-full h-auto flex flex-col items-center justify-center'>
             <HomeContainer />
+            <MenuContainer />
 
             <section className='w-full my-6'>
                 <div className="w-full flex items-center justify-between">
@@ -34,8 +35,6 @@ const MainContainer = () => {
                     scrollValue={scrollValue}
                     flag={true} data={foodItems?.filter(n => n.category === 'Promo code')} />
             </section>
-
-            <MenuContainer />
 
             {cartShow && (
                 <CartContainer />

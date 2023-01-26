@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer';
 
 const AboutContainer = () => {
   return (
@@ -11,6 +12,7 @@ const AboutContainer = () => {
         <div>What are you waiting for?</div>
 
       </center>
+      <Footer />
     </section>
 
 

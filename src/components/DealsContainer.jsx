@@ -1,13 +1,13 @@
 import React from 'react'
-import { motion } from "framer-motion"
-import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
-import RowContainer from "./RowContainer.jsx"
-import MainContainer from './MainContainer.jsx'
+import Footer from './Footer';
+import MenuContainer from './MenuContainer';
 
 const DealsContainer = () => {
     return (
-        <div className='w-full h-auto flex flex-col items-center justify-center'>
+        <div className='w-auto h-screen'>
+            <MenuContainer />
         </div>
+
     )
 }
 

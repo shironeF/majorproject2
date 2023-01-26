@@ -11,7 +11,6 @@ import { Link } from "react-router-dom";
 import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
 
-
 const Header = () => {
 
   const firebaseAuth = getAuth(app);
@@ -168,8 +167,8 @@ const Header = () => {
           }
         </div>
       </div>
-
     </header>
+
   )
 }
 

@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
 import { Route, Routes } from "react-router-dom"
 import { AnimatePresence } from 'framer-motion';
-import {CreateContainer, Header, MainContainer,StoresContainer,DealsContainer,AboutContainer} from "./components"
+import {CreateContainer, Header, MainContainer,StoresContainer,DealsContainer,AboutContainer, Footer} from "./components"
 import { getAllFoodItems } from './utils/firebaseFunctions';
 import { useStateValue } from './context/StateProvider';
 import { actionType } from "./context/reducer";
-import { Footer } from "./components/Footer";
-
 const App = () => {
   const [{foodItems}, dispatch ] = useStateValue();
   const fetchData = async () => {
@@ -18,11 +16,9 @@ const App = () => {
 };
   useEffect(() => { fetchData(); }, []);
   return (
-
     <AnimatePresence mode='wait'>
     <div className="w-screen h-auto flex flex-col bg-primary">
       <Header />
-
       <main className="mt-14 md:mt-20 px-4 md:px-16 py-4 w-full">
         <Routes>
           <Route path="/*" element={<MainContainer />} />
@@ -33,9 +29,9 @@ const App = () => {
           </Routes>   
       </main>
     </div>
-    <Footer />
+    <Footer/>
     </AnimatePresence>
+    
   )
 }
-
 export default App

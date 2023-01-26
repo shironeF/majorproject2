@@ -3,7 +3,6 @@ import Delivery from '../img/3697355.jpg';
 import HeroBg from '../img/left-yellow@2x-4af06303da718a581de65b81c9546dd312411b6a778edbecbcc2b999d94d60e3.svg';
 import { heroData } from "../utils/data";
 
-
 const HomeContainer = () => {
     return (
         <section className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-2 w-full h-[calc(100%-88px)]" id='home'>
