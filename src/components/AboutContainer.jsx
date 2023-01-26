@@ -1,60 +1,135 @@
-import React from 'react'
+import React from "react";
 
 const AboutContainer = () => {
   return (
+    <>
+      <center>
+        <span class="text-orange-600 text-[3rem] lg:text-[5rem]">
+          <div></div>
+          The Dev Team{" "}
+        </span>
+      </center>
 
-    <div className='row d-flex'>
-    <div class="card-group">
-  <div class="col-4 card ">
-    < img src="/img/bg2.jpg" class="card-img-top" alt="..."/>
-    < img src="/img/ivanprofile.jpg" class="card-img-top" alt="..."/>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <h5 class="card-title">Ma.Ivy Vanessa Nohara</h5>
-      <p class="card-text">Time is Diamond, maiba-iba naman.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="col-4 card">
-    <img src="./img/bg1.jpg" class="card-img-top" alt="..."/>
-    <img src="/img/chrisprofile.png" class="card-img-top" alt="..."/>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <h5 class="card-title">Chris Jhovin C. Cabral.</h5>
-      <p class="card-text">Pag nanalo ako sa lotto,bibilhin ko ang KodeGO</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="col-4 card">
-    <img src="" class="card-img-top" alt="bg"/>
-    <img src="/img/profile.jpg" class="card-img-top" alt="bg"/>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <h5 class="card-title">Jerome Pingol</h5>
-      <p class="card-text">Gwapo lang ambag ko sa grupo.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="col-3 card">
-    <img src="" class="card-img-top" alt="profile"/>
-    <img src="/img/ron2.jpg" class="card-img-top" alt="profile"/>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <h5 class="card-title">Shirone Fortuno</h5>
-      <p class="card-text">Minsan nako nagbuhat ng mabigat ba bagay,pero mas mabigat pala tong grupo nato buhatin kahit hindi bagay.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  </div>
-  </div>
-    
-  )
+      <div className="container">
+        <div className="">
+          <div class="card-deck mt-5 d-flex">
+            <div class="card col-3 me-1">
+              <img
+                class="card-img-top h-100"
+                src="img/ivanprofile2.jpg"
+                alt=""
+              />
+              <div class="card-body">
+                <center>
+                  <p class="text-headingColor text-xl font-bold">
+                    {" "}
+                    Ma.Ivy Vanessa Nohara
+                  </p>
+                </center>
+                <br></br>
+                <p class="text 100xl font-semibold text-headingColor uppercase relative before:absolute before:rounded-lg before:content before:w-56 before:h-1 before:-bottom-2 before:left-1 before:bg-orange-400 transition-all ease-in-out mr-auto">
+                  Fullstack Web Developer
+                </p>
+                <br></br>
+                <center>
+                  <a
+                    class="btn btn-primary"
+                    href="https://www.facebook.com/ivanrahano"
+                    role="button"
+                  >
+                    Facebook
+                  </a>
+                </center>
+              </div>
+            </div>
+            <div class="card col-3 me-1">
+              <img
+                class="card-img-top"
+                src="img/chrisprofile.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <center>
+                  <p class="text-headingColor text-xl font-bold">
+                    Chris Jhovin C. Cabral.
+                  </p>
+                </center>
+                <br></br>
+                <p class="text 100xl font-semibold text-headingColor uppercase relative before:absolute before:rounded-lg before:content before:w-56 before:h-1 before:-bottom-2 before:left-1 before:bg-orange-400 transition-all ease-in-out mr-auto">
+                  Fullstack Web Developer
+                </p>
+                <br></br>
+                <center>
+                  <a
+                    class="btn btn-primary"
+                    href="https://www.facebook.com/chrisjhovin.cabral.1"
+                    role="button"
+                  >
+                    Facebook
+                  </a>
+                </center>
+              </div>
+            </div>
+            <div class="card col-3 me-1">
+              <img class="card-img-top" src="img/profile.jpg" alt="" />
+              <div class="card-body">
+                <center>
+                  <p class="text-headingColor text-xl font-bold">
+                    {" "}
+                    Jerome L. Pingol.
+                  </p>
+                </center>
+                <br></br>
+                <p class="text 100xl font-semibold text-headingColor uppercase relative before:absolute before:rounded-lg before:content before:w-56 before:h-1 before:-bottom-2 before:left-1 before:bg-orange-400 transition-all ease-in-out mr-auto">
+                  Fullstack Web Developer
+                </p>
+                <br></br>
+                <center>
+                  <a
+                    class="btn btn-primary"
+                    href="https://www.facebook.com/OnlineRakitero26"
+                    role="button"
+                  >
+                    Facebook
+                  </a>
+                </center>
+              </div>
+            </div>
 
-}
+            <div class="card col-3">
+              <img
+                class="card-img-top"
+                src="img/ron2.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <center>
+                  <p class="text-headingColor text-xl font-bold">
+                    {" "}
+                    Shirone Fortuno
+                  </p>
+                </center>
+                <br></br>
+                <p class="text 100xl font-semibold text-headingColor uppercase relative before:absolute before:rounded-lg before:content before:w-56 before:h-1 before:-bottom-2 before:left-1 before:bg-orange-400 transition-all ease-in-out mr-auto">
+                  Fullstack Web Developer
+                </p>
+                <br></br>
+                <center>
+                  <a
+                    class="btn btn-primary"
+                    href="https://www.facebook.com/shifortuno"
+                    role="button"
+                  >
+                    Facebook
+                  </a>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default AboutContainer
-
+export default AboutContainer;
