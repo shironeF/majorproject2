@@ -33,18 +33,18 @@ export const heroData = [
 export const categories = [
     {
         id : 1, 
-        name : 'Chickens',
-        urlParamName: "Chickens",
+        name : 'Mcdonalds',
+        urlParamName: "Mcdonalds",
     },
     {
         id : 2, 
-        name : 'Burgers',
-        urlParamName: "Burgers",
+        name : 'Jollibee',
+        urlParamName: "Jollibee",
     },
     {
         id : 4, 
-        name : 'Pizza',
-        urlParamName: "Pizza", 
+        name : 'BurgerKing',
+        urlParamName: "BurgerKing", 
     },
     {
         id : 5, 
@@ -65,7 +65,32 @@ export const categories = [
 
     {
         id : 8, 
-        name : 'Promo',
-        urlParamName: "Promo code", 
+        name : 'Pizza',
+        urlParamName: "Pizza", 
     },
+
+    {
+        id : 9, 
+        name : 'Chickens',
+        urlParamName: "Chickens",
+    },
+
+    {
+        id : 10, 
+        name : 'Burgers',
+        urlParamName: "Burgers",
+    },
+
+    {
+        id : 11, 
+        name : 'Promo',
+        urlParamName: "Promo Code",
+    },
+    
 ];
+
+
+
+
+
+
