@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="423px" height="577px" viewBox="0 0 423 577" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Hero-BG-color tile-2@2x</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F2C314" offset="0%"></stop>
+            <stop stop-color="#FC3832" offset="100%"></stop>
+        </linearGradient>
+        <path d="M1176.95552,-127.322185 L1674.40011,-127.322185 C1692.23049,-127.322185 1698.69621,-125.465673 1705.21473,-121.979531 C1711.73325,-118.493389 1716.84902,-113.377618 1720.33516,-106.859099 C1723.8213,-100.340581 1725.67781,-93.8748562 1725.67781,-76.0444814 L1725.67781,421.400111 C1725.67781,439.230485 1723.8213,445.69621 1720.33516,452.214729 C1716.84902,458.733247 1711.73325,463.849019 1705.21473,467.335161 C1698.69621,470.821302 1692.23049,472.677815 1674.40011,472.677815 L1176.95552,472.677815 C1159.12514,472.677815 1152.65942,470.821302 1146.1409,467.335161 C1139.62238,463.849019 1134.50661,458.733247 1131.02047,452.214729 C1127.53433,445.69621 1125.67781,439.230485 1125.67781,421.400111 L1125.67781,-76.0444814 C1125.67781,-93.8748562 1127.53433,-100.340581 1131.02047,-106.859099 C1134.50661,-113.377618 1139.62238,-118.493389 1146.1409,-121.979531 C1152.65942,-125.465673 1159.12514,-127.322185 1176.95552,-127.322185 Z" id="path-2"></path>
+        <filter x="-4.7%" y="-3.3%" width="109.3%" height="109.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.9">
+        <g id="Homepage" transform="translate(-1017.000000, 0.000000)">
+            <g id="Hero-BG-color-tile-2" transform="translate(1425.677815, 172.677815) rotate(65.000000) translate(-1425.677815, -172.677815) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>
