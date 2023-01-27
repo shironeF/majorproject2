@@ -7,7 +7,7 @@ import { useStateValue } from '../context/StateProvider';
 
 const MenuContainer = () => {
 
-    const [filter, setFilter] = useState("Chickens");
+    const [filter, setFilter] = useState("Pasta");
     const [{ foodItems }, dispatch] = useStateValue();
 
     return (
