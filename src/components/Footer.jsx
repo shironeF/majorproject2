@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <footer>
-      <div className='md:flex md:justify-between sm:px-12 px-4 bg-gray-200'></div>
+    <footer className='justify-center overflow-hidden'>
+      <div className='md:flex md:justify-between sm:px-12 px-4 bg-gray-200 overflow-auto'></div>
 
       <div>
         <div className='flex flex-col items-center justify-center bg-gradient-to-tl from-orange-300 to-red-400'>

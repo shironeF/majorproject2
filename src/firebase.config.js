@@ -3,15 +3,16 @@ import {getFirestore} from 'firebase/firestore';
 import {getStorage} from 'firebase/storage';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAGm9MPBvfvve2G5NkjTMyo03hjqL02QB0",
-    authDomain: "majorproject2-752ea.firebaseapp.com",
-    databaseURL: "https://majorproject2-752ea-default-rtdb.firebaseio.com",
-    projectId: "majorproject2-752ea",
-    storageBucket: "majorproject2-752ea.appspot.com",
-    messagingSenderId: "825747469245",
-    appId: "1:825747469245:web:2742e347033f7e6271d8d4",
-    measurementId: "G-JMGCLC3NC6"
-  };
+  apiKey: "AIzaSyCXvgXaU2fyQ9bbon5qYwF5AUNTeqEZyVA",
+  authDomain: "foodpad2.firebaseapp.com",
+  databaseURL: "https://foodpad2-default-rtdb.firebaseio.com",
+  projectId: "foodpad2",
+  storageBucket: "foodpad2.appspot.com",
+  messagingSenderId: "505706041149",
+  appId: "1:505706041149:web:939fce15257af42d54ff54",
+  measurementId: "G-03F5V93D56"
+};
+
   
   const app = getApps.length > 0 ? getApp() : initializeApp(firebaseConfig);
 

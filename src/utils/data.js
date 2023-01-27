@@ -64,11 +64,12 @@ export const categories = [
     },
 
     {
-        id : 8, 
-        name : 'Promo',
-        urlParamName: "Promo code", 
+        id : 1, 
+        name : 'newmenu',
+        urlParamName: "newmenu",
     },
-    
+
+
 ];
 
 export const restaurants = [
@@ -120,3 +121,14 @@ export const restaurants = [
     urlParamName: "MAX's", 
 },
 ];
+
+
+export const newmenu = [
+
+    {
+        id : 1, 
+        name : 'newmenu',
+        urlParamName: "newmenu",
+    },
+
+    ];
