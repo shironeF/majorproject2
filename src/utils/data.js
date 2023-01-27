@@ -68,14 +68,6 @@ export const categories = [
         name : 'Promo',
         urlParamName: "Promo code", 
     },
-
-    
-{
-    id : 9, 
-    name : 'BurgerKing',
-    urlParamName: "BurgerKing", 
-},
-
     
 ];
 
