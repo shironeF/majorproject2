@@ -5,7 +5,7 @@ import CartContainer from './CartContainer';
 
 
 
-const MainContainer = () => {
+const StoreContainer = () => {
     const [{ foodItems, cartShow }, dispatch] = useStateValue();
     const [scrollValue, setScrollValue] = useState(0);
 
@@ -23,4 +23,4 @@ const MainContainer = () => {
     )
 }
 
-export default MainContainer
+export default StoreContainer
