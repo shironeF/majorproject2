@@ -28,4 +28,44 @@ export const heroData = [
         price : '45.99', 
         imageSrc : f7, 
     },
-]
+];
+
+export const categories = [
+    {
+        id : 1, 
+        name : 'Chickens',
+        urlParamName: "Chickens",
+    },
+    {
+        id : 2, 
+        name : 'Burgers',
+        urlParamName: "Burgers",
+    },
+    {
+        id : 4, 
+        name : 'Pizza',
+        urlParamName: "Pizza", 
+    },
+    {
+        id : 5, 
+        name : 'Pasta',
+        urlParamName: "Pasta",
+    },
+    {
+        id : 6, 
+        name : 'Rice Meals',
+        urlParamName: "Rice Meals", 
+    },
+
+    {
+        id : 7, 
+        name : 'Sides',
+        urlParamName: "Sides", 
+    },
+
+    {
+        id : 8, 
+        name : 'Promo',
+        urlParamName: "Promo code", 
+    },
+];

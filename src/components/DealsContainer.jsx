@@ -1,9 +1,12 @@
 import React from 'react'
+import MenuContainer from './MenuContainer';
 
 const DealsContainer = () => {
     return (
-        //Your Code for store will begin here 
-        <div>DealsContainer</div>
+        <div>
+            <MenuContainer />
+        </div>
+
     )
 }
 
