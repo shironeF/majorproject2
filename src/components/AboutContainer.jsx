@@ -29,7 +29,7 @@ const AboutContainer = () => {
                   </p>
                 </center>
                 <br></br>
-                <p class="text 100xl font-semibold text-headingColor uppercase relative before:absolute before:rounded-lg before:content before:w-56 before:h-1 before:-bottom-2 before:left-1 before:bg-orange-400 transition-all ease-in-out mr-auto">
+                <p class="text 100xl font-semibold text-headingColor uppercase relative before:bg-orange-400 transition-all ease-in-out text-center">
                   Fullstack Web Developer
                 </p>
                 <br></br>
@@ -57,7 +57,7 @@ const AboutContainer = () => {
                   </p>
                 </center>
                 <br></br>
-                <p class="text 100xl font-semibold text-headingColor uppercase relative before:absolute before:rounded-lg before:content before:w-56 before:h-1 before:-bottom-2 before:left-1 before:bg-orange-400 transition-all ease-in-out mr-auto">
+                <p class="text 100xl font-semibold text-headingColor uppercase relative before:bg-orange-400 transition-all ease-in-out text-center">
                   Fullstack Web Developer
                 </p>
                 <br></br>
@@ -82,7 +82,7 @@ const AboutContainer = () => {
                   </p>
                 </center>
                 <br></br>
-                <p class="text 100xl font-semibold text-headingColor uppercase relative before:absolute before:rounded-lg before:content before:w-56 before:h-1 before:-bottom-2 before:left-1 before:bg-orange-400 transition-all ease-in-out mr-auto">
+                <p class="text 100xl font-semibold text-headingColor uppercase relative before:bg-orange-400 transition-all ease-in-out text-center">
                   Fullstack Web Developer
                 </p>
                 <br></br>
@@ -112,7 +112,7 @@ const AboutContainer = () => {
                   </p>
                 </center>
                 <br></br>
-                <p class="text 100xl font-semibold text-headingColor uppercase relative before:absolute before:rounded-lg before:content before:w-56 before:h-1 before:-bottom-2 before:left-1 before:bg-orange-400 transition-all ease-in-out mr-auto">
+                <p class="text 100xl font-semibold text-headingColor uppercase relative before:bg-orange-400 transition-all ease-in-out text-center">
                   Fullstack Web Developer
                 </p>
                 <br></br>

@@ -68,4 +68,55 @@ export const categories = [
         name : 'Promo',
         urlParamName: "Promo code", 
     },
+    
+];
+
+export const restaurants = [
+
+{
+    id : 1, 
+    name : 'Jollibee',
+    urlParamName: "Jollibee",
+},
+{
+    id : 2, 
+    name : 'Mcdonalds',
+    urlParamName: "Mcdonalds",
+},
+{
+    id : 5, 
+    name : 'BurgerKing',
+    urlParamName: "BurgerKing", 
+},
+{
+    id : 6, 
+    name : 'Kuya J',
+    urlParamName: "Kuya J", 
+},
+{
+    id : 7, 
+    name : 'Pizza Hut',
+    urlParamName: "Pizza Hut", 
+},
+{
+    id : 8, 
+    name : 'Mang Inasal',
+    urlParamName: "Mang Inasal", 
+},
+{
+    id : 9, 
+    name : "Wendy's",
+    urlParamName: "Wendy's", 
+},
+{
+    id : 10, 
+    name : "KFC",
+    urlParamName: "KFC", 
+},
+
+{
+    id : 11, 
+    name : "MAX's",
+    urlParamName: "MAX's", 
+},
 ];

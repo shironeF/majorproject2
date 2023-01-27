@@ -1,16 +1,26 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from "react";
+import { useStateValue } from "../context/StateProvider";
+import Storesutils from './Storeutils';
+import CartContainer from './CartContainer';
 
-const StoresContainer = () => {
+
+
+const MainContainer = () => {
+    const [{ foodItems, cartShow }, dispatch] = useStateValue();
+    const [scrollValue, setScrollValue] = useState(0);
+
+    useEffect(() => { }, [scrollValue]);
+
     return (
-        //Your Code for store will begin here 
-        <section>
-            <center>
-                <div>Restaurants</div>
-                <div>You can choose your favorite meal!</div>
-                <div>What are you waiting for?</div>
-            </center>
-        </section>
+        <div className='w-full h-auto flex flex-col items-center justify-center'>
+
+            <Storesutils />
+            {cartShow && (
+                <CartContainer />
+            )}
+
+        </div>
     )
 }
 
-export default StoresContainer
+export default MainContainer

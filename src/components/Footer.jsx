@@ -8,12 +8,12 @@ export const Footer = () => {
       <div>
         <div className='flex flex-col items-center justify-center bg-gradient-to-tl from-orange-300 to-red-400'>
           <p className='font-semibold uppercase mt-10'>foodpad philippines inc.</p>
-          <span className=' mt-5'> &copy;{new Date().getFullYear()} All Rights Reserved </span>
+          <span className=' mt-3'> &copy;{new Date().getFullYear()} All Rights Reserved </span>
 
 
-          <div className='grid grid-col sm:grid-cols-3 lg:grid-col-3 gap-10 text-center pt-2 text-sm pb-8 mt-5 md:text-sm sm:text-lg text-black'>
+          <div className='grid grid-col sm:grid-cols-3 lg:grid-col-3 gap-10 text-center pt-2 text-sm pb-8 mt-3 md:text-sm sm:text-lg text-black'>
             <div>
-              <p><a href="">About</a></p>
+              <p className='mt-3'><a href="">About </a></p>
               <p className='mt-3'><a href="">Help Center </a></p>
               <p className='mt-3'><a href="">Contacts</a></p>
               <p className='mt-3'><a href="">Terms And Conditions</a></p>
