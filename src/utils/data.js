@@ -70,6 +70,13 @@ export const categories = [
     },
 
     
+{
+    id : 9, 
+    name : 'BurgerKing',
+    urlParamName: "BurgerKing", 
+},
+
+    
 ];
 
 export const restaurants = [
