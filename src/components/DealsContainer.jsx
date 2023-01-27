@@ -8,7 +8,6 @@ const DealsContainer = () => {
         <div>
           
             <Menu />
-            <MenuContainer />
         </div>
 
     )
