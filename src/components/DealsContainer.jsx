@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import RowContainer from "./RowContainer.jsx";
 import { useStateValue } from "../context/StateProvider";

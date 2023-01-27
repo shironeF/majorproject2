@@ -3,11 +3,11 @@ import { IoFastFood } from 'react-icons/io5';
 import { restaurants } from '../utils/data';
 import { motion } from 'framer-motion';
 import { useStateValue } from '../context/StateProvider';
-import RowResto from './RowResto'
+import RowContainer from './RowContainer';
 
 const Storeutils = () => {
 
-    const [filter, setFilter] = useState("Chickens");
+    const [filter, setFilter] = useState("Jollibee");
     const [{ foodItems }, dispatch] = useStateValue();
 
     return (
@@ -34,7 +34,7 @@ const Storeutils = () => {
                     )}
                 </div>
                 <div>
-                    <RowResto flag={false} data={foodItems?.filter((n) => n.restaurant === filter)} />
+                    <RowContainer flag={false} data={foodItems?.filter((n) => n.category === filter)} />
                 </div>
             </div>
         </section >

@@ -68,19 +68,21 @@ export const categories = [
         name : 'Promo',
         urlParamName: "Promo code", 
     },
+
+    
 ];
 
 export const restaurants = [
 
 {
     id : 1, 
-    name : 'Mcdonalds',
-    urlParamName: "Mcdonalds",
+    name : 'Jollibee',
+    urlParamName: "Jollibee",
 },
 {
     id : 2, 
-    name : 'Jollibee',
-    urlParamName: "Jollibee",
+    name : 'Mcdonalds',
+    urlParamName: "Mcdonalds",
 },
 {
     id : 5, 
