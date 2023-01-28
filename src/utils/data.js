@@ -63,13 +63,6 @@ export const categories = [
         urlParamName: "Sides", 
     },
 
-    {
-        id : 1, 
-        name : 'newmenu',
-        urlParamName: "newmenu",
-    },
-
-
 ];
 
 export const restaurants = [
