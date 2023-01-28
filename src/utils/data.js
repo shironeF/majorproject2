@@ -115,13 +115,3 @@ export const restaurants = [
 },
 ];
 
-
-export const newmenu = [
-
-    {
-        id : 1, 
-        name : 'newmenu',
-        urlParamName: "newmenu",
-    },
-
-    ];
