@@ -4,7 +4,6 @@ export {default as CreateContainer} from "./CreateContainer";
 export {default as HomeContainer} from "./HomeContainer";
 export {default as StoresContainer} from "./StoresContainer";
 export {default as DealsContainer} from "./DealsContainer";
-export {default as AboutContainer} from "./AboutContainer";
 export { default as Loader } from "./Loader";
 export { default as RowContainer } from "./RowContainer";
 export { default as MenuContainer } from "./MenuContainer";
